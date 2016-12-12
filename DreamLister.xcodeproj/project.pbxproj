@@ -22,6 +22,7 @@
 		84D9BCDD1DFEDC7400E25B90 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9BCD51DFEDC7400E25B90 /* Item+CoreDataClass.swift */; };
 		84D9BCDE1DFEDC7400E25B90 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9BCD61DFEDC7400E25B90 /* Item+CoreDataProperties.swift */; };
 		84D9BCE11DFEF15400E25B90 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9BCE01DFEF15400E25B90 /* MaterialView.swift */; };
+		84D9BCE31DFEF95600E25B90 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9BCE21DFEF95600E25B90 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		84D9BCD51DFEDC7400E25B90 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
 		84D9BCD61DFEDC7400E25B90 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		84D9BCE01DFEF15400E25B90 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		84D9BCE21DFEF95600E25B90 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				84D9BCE01DFEF15400E25B90 /* MaterialView.swift */,
+				84D9BCE21DFEF95600E25B90 /* ItemCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D9BCE31DFEF95600E25B90 /* ItemCell.swift in Sources */,
 				84D9BCDD1DFEDC7400E25B90 /* Item+CoreDataClass.swift in Sources */,
 				84D9BC7B1DFEB1E400E25B90 /* MainVC.swift in Sources */,
 				84D9BCD91DFEDC7400E25B90 /* Store+CoreDataClass.swift in Sources */,

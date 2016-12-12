@@ -30,15 +30,15 @@
                                 </segments>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rMA-Qq-hTW">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rMA-Qq-hTW">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="vfC-5G-OTH">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="150" id="vfC-5G-OTH" customClass="ItemCell" customModule="DreamLister" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="288" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vfC-5G-OTH" id="I5w-CN-4ip">
-                                            <frame key="frameInset" width="288" height="149"/>
+                                            <frame key="frameInset" width="288" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LUG-62-1Mt">
@@ -99,6 +99,12 @@
                                                 <constraint firstItem="LUG-62-1Mt" firstAttribute="top" secondItem="I5w-CN-4ip" secondAttribute="topMargin" id="xim-Le-gkU"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="details" destination="lFI-o7-zge" id="cNM-yz-gv9"/>
+                                            <outlet property="price" destination="F8w-e1-NsC" id="Qi6-wx-mMz"/>
+                                            <outlet property="thumb" destination="TKv-Wc-RKf" id="omH-NK-B9N"/>
+                                            <outlet property="title" destination="Qm2-gd-kET" id="nhI-ot-wEQ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -119,10 +125,14 @@
                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="segment" destination="fIq-i6-caM" id="uEs-CC-Vxd"/>
+                        <outlet property="tableView" destination="rMA-Qq-hTW" id="bTR-Vc-BHL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1089.375" y="785.91549295774644"/>
+            <point key="canvasLocation" x="-43821" y="-11300"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ggm-Ti-5yM">
@@ -144,7 +154,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b2l-I3-Ude" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116.25" y="785.91549295774644"/>
+            <point key="canvasLocation" x="-44719" y="-11300"/>
         </scene>
     </scenes>
     <resources>
