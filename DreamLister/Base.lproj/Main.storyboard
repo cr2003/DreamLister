@@ -156,12 +156,6 @@
                                     <constraint firstAttribute="width" constant="100" id="btC-YV-OrL"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeS-Zh-4Gt">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="RxB-8k-1tp"/>
-                                    <constraint firstAttribute="width" constant="100" id="fVI-mL-eUG"/>
-                                </constraints>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pwK-Xf-k83">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -171,6 +165,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeS-Zh-4Gt">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="RxB-8k-1tp"/>
+                                    <constraint firstAttribute="width" constant="100" id="fVI-mL-eUG"/>
+                                </constraints>
+                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pOB-LS-Qi7">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -244,10 +244,16 @@
                             <color key="tintColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="detailsField" destination="xHw-N9-8zO" id="nW2-Bw-2aO"/>
+                        <outlet property="priceField" destination="pOB-LS-Qi7" id="VeT-dT-mZa"/>
+                        <outlet property="storePicker" destination="EfM-aQ-ijQ" id="J5u-6p-IKs"/>
+                        <outlet property="titleField" destination="pwK-Xf-k83" id="OJ2-G9-YFN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xxM-Km-ef7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-43014.375" y="-12077.112676056338"/>
+            <point key="canvasLocation" x="-42788" y="-12077"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ggm-Ti-5yM">
@@ -278,6 +284,6 @@
         <image name="tesla" width="800" height="489"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3Z7-oX-Auv"/>
+        <segue reference="cA3-bN-1AQ"/>
     </inferredMetricsTieBreakers>
 </document>
