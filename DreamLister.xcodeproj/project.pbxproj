@@ -64,6 +64,7 @@
 		8462FD211E0019E7008F2D37 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				84D9BC7A1DFEB1E400E25B90 /* MainVC.swift */,
 				8462FD221E001A43008F2D37 /* ItemDetailsVC.swift */,
 			);
 			name = Controller;
@@ -92,7 +93,6 @@
 				84D9BC9D1DFEBBC100E25B90 /* Model */,
 				8462FD211E0019E7008F2D37 /* Controller */,
 				84D9BC781DFEB1E400E25B90 /* AppDelegate.swift */,
-				84D9BC7A1DFEB1E400E25B90 /* MainVC.swift */,
 				84D9BC7C1DFEB1E400E25B90 /* Main.storyboard */,
 				84D9BC821DFEB1E400E25B90 /* Assets.xcassets */,
 				84D9BC841DFEB1E400E25B90 /* LaunchScreen.storyboard */,
